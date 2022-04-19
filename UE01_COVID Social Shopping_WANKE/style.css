@@ -1,0 +1,209 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    text-align: center;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/************** NAVIGATION ***************/
+nav {
+    background: rgb(168, 229, 198);
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+/************** RESPONSIVE NAV ***************/
+@media (max-device-width: 720px) {
+    nav a{
+        display: block;
+    }
+}
+
+/************** LINKS ***************/
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(168, 229, 198);
+    text-decoration: overline;
+}
+
+/************** TEXT ALIGN ***************/
+.left {
+    text-align: left;
+    margin: 1em;
+}
+
+.left_small {
+    text-align: left;
+    margin-left: 1em;
+    font-size: 14px;
+}
+
+.left_small_one {
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: -1em;
+    font-size: 14px;
+}
+
+/************** LIST ***************/
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-image: url("assets/foodism360-GfuxfFJt7cw-unsplash.jpg");
+
+}
+
+.list div{
+    width: 250px;
+    border: solid rgb(168, 229, 198) 2px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+/************** BUTTON ***************/
+button{
+    background-color: rgb(168, 229, 198);
+    margin-bottom: 1em;
+    border: 0px;
+    padding: 0.7em;
+    border-radius: 2em;
+    margin-right: 1em;
+}
+
+.detail{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(168, 229, 198);
+    background-color: white;
+    font-size: 1.2em;
+    padding: 0em;
+    margin: 0.2em;
+}
+
+.detail:hover{
+    color: #4d172e;
+}
+
+/************** RESPONSIVE TABLE ***************/
+@media (max-width: 720px) {
+    #detail {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/************** TABLE ***************/
+table, tr, td{
+    border-bottom: 1px solid black;
+    color: black;
+
+}
+
+table {
+    margin: 5em;
+}
+
+th{
+    background-color: rgb(168, 229, 198);
+    font-size: 20px;
+    text-align: left;
+    display: grid;
+    padding: 1%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+tr{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+td{
+    padding: 3%;
+    display: grid;
+
+}
+
+/************** FLEX ***************/
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button, #btn-help, #newList, #back{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.topbuttons{
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    transition: background-color .5s ease-in;
+}
+
+.topbuttons:hover{
+    background-color: rgba(70, 0, 96, 0.82);
+    color: white;
+
+}
+
+.withoutBorder{
+    border: none;
+    background: none;
+}
+
+
+/************* STATUS ***************/
+.list .offen {
+    border-left: 5px solid rgb(100, 229, 125);
+}
+
+.list .geschlossen {
+    border-left: 5px solid rgb(229, 109, 110);
+}
+
+
+.hide{
+    display: none;
+}
+
+
+.list .grey{
+    color: grey;
+}
+
+.article{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(168, 229, 198);
+    background-color: white;
+    font-size: 1.2em;
+    padding: 0em;
+    margin: 0.2em;
+}
